@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos de Mesa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <img src="./media/img/logo_final.png" alt="Logo" class="logo">
+        <nav class="main-nav">
+            <a href="#" class="nav-link">Juegos de Mesa</a>
+            <a href="#" class="nav-link">Empresas</a>
+            <a href="#" class="nav-link">Nosotros</a>
+            <a href="#" class="nav-link">Tienda</a>
+        </nav>
+    </header>
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Buscar juego...">
+        <button class="search-button">Buscar</button>
+    </div>
+    <main>
+        <section class="banner">
+            <picture>
+                <source srcset="./media/img/bannerfinal.png" media="(min-width: 800px)">
+                <img class="banner__image" src="./media/img/bannerfinal.png" alt="Juego destacado del mes">
+            </picture>
+            <h2 class="banner__title">Destacado del mes</h2>
+            <a href="#" class="btn-destacado">Ver Juego</a>
+        </section>
+        <section class="games-featured">
+            <article class="game">
+                <img src="./media/img/camarero.jpg" alt="Camarero" class="game__img">
+                <h2 class="game__title">Camarero</h2>
+                <p class="game__description">Descripción breve del juego 1.</p>
+                <p class="game__price">Precio</p>
+                <p class="game__promo">Cuotas sin interes</p>
+            </article>
+            <article class="game">
+                <img src="./media/img/macanudo.jpg" alt="Macanudo" class="game__img">
+                <h2 class="game__title">Macanudo</h2>
+                <p class="game__description">Descripción breve del juego 2.</p>
+                <p class="game__price">Precio</p>
+                <p class="game__promo">Cuotas sin interes</p>
+            </article>
+            <article class="game">
+                <img src="./media/img/vayviene.jpg" alt="Va y Viene" class="game__img">
+                <h2 class="game__title">Va y Viene</h2>
+                <p class="game__description">Descripción breve del juego 3.</p>
+                <p class="game__price">Precio</p>
+                <p class="game__promo">Cuotas sin interes</p>
+            </article>
+        </section>
+        <section class="slider-container-glide">
+            <h2 class="slider__title" >Últimos lanzamientos</h2>
+            <div>
+                <ul class="slider__items glide__slide">
+                    <li class="slider__items glide__slide">
+                        <article class="card-item">
+                            <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__image" src="./media/img/Jardinero-juegonuevo.jpg" alt="Jardinero">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__band">marca registrada del juego</p>
+                                <h4 class="card-item__name">Nombre del juego</h4>
+                                <p class="card-item__price">Precio</p>
+                                <p class="card-item__promo">cuotas sin interés</p>
+                            </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="slider__items glide__slide">
+                        <article class="card-item">
+                            <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__image" src="./media/img/katamino-juegonuevo.jpg" alt="Katamino">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__band">marca registrada del juego</p>
+                                <h4 class="card-item__name">Nombre del juego</h4>
+                                <p class="card-item__price">Precio</p>
+                                <p class="card-item__promo">cuotas sin interés</p>
+                            </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="slider__items glide__slide">
+                        <article class="card-item">
+                            <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__image" src="./media/img/quarto-juegonuevo.jpg" alt="Quarto">
+                            </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__band">marca registrada del juego</p>
+                                <h4 class="card-item__name">Nombre del juego</h4>
+                                <p class="card-item__price">Precio</p>
+                                <p class="card-item__promo">cuotas sin interés</p>
+                            </div>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows">
+                <button class="glide__arrows glide__arrow--left"><</button>
+                <button class="glide__arrows glide__arrow--rignt">></button>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <img src="./media/img/logo_final.png" alt="Logo" class="footer-logo">
+        <nav class="footer-nav">
+            <a href="#" class="footer-link">Registro</a>
+            <a href="#" class="footer-link">Login</a>
+            <a href="#" class="footer-link">Contacto</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

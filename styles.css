@@ -1,0 +1,366 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/* Variables */
+
+:root {
+    /* Colores primarios */
+    --primary-solid: #FF5733; /* Naranja */
+    --primary-900: #E44D19; /* Naranja oscuro */
+    --primary-500: #FF8855; /* Naranja medio */
+    --primary-300: #FFA477; /* Naranja claro */
+
+    /* Colores secundarios */
+    --secondary-solid: #3498db; /* Azul */
+    --secondary-900: #2c7daf; /* Azul oscuro */
+    --secondary-500: #5aa6d6; /* Azul medio */
+    --secondary-300: #83c1ea; /* Azul claro */
+
+    /* Grises y neutros */
+    --dark-solid: #333; /* Gris oscuro sólido */
+    --dark-900: #222; /* Casi negro */
+    --dark-500: #555; /* Gris oscuro medio */
+    --dark-300: #777; /* Gris claro oscuro */
+    --dark-bg-solid: #2a2a2a; /* Fondo gris oscuro sólido */
+
+    --light-bg-solid: #f4f4f4; /* Fondo gris claro */
+    --light-font-solid: #f9f9f9; /* Color de texto para contrastar con fondos oscuros */
+    --dark-font-solid: #ffffff /* Color negro*/
+
+    /* Tipografías */
+
+    --alternative-font: 'Raleway', 'Roboto';
+    --base-font: 'Montserrat', 'Raleway';
+
+    /*Tamaños*/
+
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+
+    /* Espaciados */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-48: 4.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+/* Estilos generales */
+
+body {
+    font-family: var(--base-font);
+    background-color: var(--light-bg-solid);
+    color: var(--dark-solid);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-16);
+    background-color: var(--primary-solid);
+}
+
+.logo {
+    max-width: 180px; 
+}
+
+.main-nav .nav-link {
+    font-family: var(--alternative-font);
+    background-color: var(--secondary-500);
+    color: var(--dark-font-solid);
+    padding: var(--spacing-8);
+    text-decoration: none;
+    margin-left: var(--spacing-8);
+}
+
+/*Search bar*/
+
+.search-bar {
+    font-family: var(--alternative-font);
+    bottom: var(--spacing-36);
+    text-align: center;
+    background-color: var(--primary-300);
+    
+}
+
+.search-input, .search-button {
+    font-family: var(--alternative-font);
+    padding: var(--spacing-8);
+    border: none;
+    margin-right: var(--spacing-8);
+    margin: var(--spacing-8);
+}
+
+.search-button {
+    background-color: var(--secondary-500);
+    padding: var(--spacing-8);
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.banner__image {
+    
+}
+
+.banner__title{
+    position: absolute;
+    top: 70%;
+}
+
+.btn-destacado {
+    position: absolute;
+    top: 75%;
+    font-family: var(--alternative-font);
+    background-color: var(--secondary-500);
+    padding: var(--spacing-8) var(--spacing-24);
+    border: none;
+    text-decoration: none;
+    color: var(--light-font-solid);
+    border-radius: 5px;
+}
+
+/* Games Featured */
+
+.games-featured {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-48);
+    
+}
+
+.game {
+    flex: 1;
+    margin: 0 var(--spacing-16);
+    
+}
+
+.game__img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.game__title {
+    font-size: var(--font-medium);
+    margin-top: var(--spacing-24);
+}
+
+.game__description {
+    font-size: var(--font-small);
+    margin-top: var(--spacing-8);
+}
+
+.game__price{
+    font-size: var(--font-xsmall);
+    margin-top: var(--spacing-8);
+}
+.game__promo{
+    font-size: var(--font-xsmall);
+    margin-top: var(--spacing-8);
+}
+
+/* Slider */
+
+.slider-container-glide{
+    padding: var(--spacing-48) 0;
+    
+}
+
+.slider__title {
+    text-align: center;
+    font-size: var(--font-xlarge);
+    margin-bottom: var(--spacing-24);
+}
+
+.glide__track {
+    position: relative;
+}
+
+.slider__items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.glide__slide {
+    flex: 1;
+}
+
+.card-item {
+    border: 1px solid var(--dark-300);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: var(--secondary-300);
+}
+
+.card-item__image {
+    width: 100%;
+    align-items: center;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+}
+
+.card-item__link {
+    display: block;
+    text-decoration: none;
+    color: var(--dark-solid);
+}
+
+.card-item__cover {
+    position: relative;
+    
+}
+
+.card-item__tag {
+    position: absolute;
+    top: -27px;
+    
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8);
+    border-radius: 4px;
+}
+
+.card-item__img--front,
+.card-item__img--back {
+    width: 50%;
+    display: block;
+}
+
+.card-item__content {
+    padding: var(--spacing-12);
+    text-align: center;
+}
+
+.card-item__band,
+.card-item__name,
+.card-item__price,
+.card-item__promo {
+    margin-bottom: var(--spacing-8);
+}
+
+.card-item__name {
+    font-size: var(--font-medium);
+    font-weight: bold;
+}
+
+.card-item__price {
+    color: var(--primary-solid);
+}
+
+.glide__arrows {
+    text-align: center;
+    margin-top: var(--spacing-24);
+}
+
+.glide__arrow {
+    background: none;
+    border: none;
+    font-size: var(--font-large);
+    cursor: pointer;
+    margin: 0 var(--spacing-8);
+    transition: color 0.3s;
+}
+
+.glide__arrow:hover {
+    color: var(--primary-solid);
+}
+
+.glide__arrow--left,
+.glide__arrow--right {
+    display: inline-block;
+}
+
+/* Footer */
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-24);
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+}
+
+.footer-logo {
+    max-width: 80px;
+}
+
+.footer-nav .footer-link {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8);
+    text-decoration: none;
+    margin-left: var(--spacing-8);
+}
