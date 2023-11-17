@@ -1,4 +1,4 @@
-# Proyrcto "Lapiz y Papel"
+# Proyecto "Lapiz y Papel"
 
 Desarrollo de una página web para el curso BA Multiplica - Programación Web.
 Mi proyecto personal es una página dedicada a la venta de juegos de mesa.
