@@ -152,13 +152,13 @@ a:hover, a:focus {
 }
 
 .banner {
-    position: relative;
+    background-image: url(../media/img/bannerfinal.png);
+    background-size: cover;
+    height: 20rem;
     display: flex;
+    row-gap: 1rem;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    
 }
 
 .banner__image {
@@ -169,7 +169,7 @@ a:hover, a:focus {
 .banner__title{
     position: absolute;
     bottom: calc(25% + 10px);  /* Esta es la distancia desde la parte inferior de la imagen*/
-    left: 50%;  /* Centra horizontalmente el título */
+    left: 50%;
     transform: translateX(-50%);  /* Asegura que el centro del título esté alineado con el centro de la imagen */
     z-index: 10;  /* Asegura que el título aparezca por encima de la imagen */
     background-color: var(--primary-300) ;
@@ -192,12 +192,30 @@ a:hover, a:focus {
 }
 
 /*Main*/
+
+.main-index{
+    margin-bottom: 50px;
+}
+
 .games-title{
     text-align: center;
     padding: 50px;
 }
 
+.game__price{
+    color: var(--dark-bg-solid);
+    font-size: large;
+}
+
+.game__promo{
+    color: var(--secondary-solid);
+}
+
 /* Games Featured */
+
+.card{
+    
+}
 
 .games-featured{
     margin: 30px;
@@ -367,5 +385,135 @@ img, video {
     margin-top: var(--spacing-12);
 }
 
+
+
 }
 
+/*Register*/
+
+.body-register{
+    background-image: url(../media/img/bannerfinal.png);
+    background-size: cover;
+
+}
+
+.registration-form {
+    background-color: white;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid var(--secondary-solid);
+    border-radius: 10px;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.registration-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #2980b9;
+}
+
+.registration-form h1 {
+    color: #3498db;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+    border: 1px solid #3498db;
+    border-radius: 4px;
+}
+
+.registration-form button {
+    border-radius: 4px;
+}
+
+.registration-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Contact */
+
+.body-contact{
+    background-image: url(../media/img/bannerfinal.png);
+    background-size: cover;
+
+}
+
+.main-contact {
+    background-color: white;
+    max-width: 500px;
+    margin: 30px auto;
+    border: 3px solid var(--secondary-solid);
+    border-radius: 10px;
+    padding: var(--spacing-24);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form h1 {
+    text-align: center;
+    color: var(--secondary-solid);
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: var(--spacing-8);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: var(--secondary-500);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-300);
+}
+
+/* Games filters*/
+
+.filter-container{
+    width: 280px;
+    padding: 20px 30px;
+}
+
+.filter {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.filter input {
+    width: 100%; 
+    padding: 10px;
+}

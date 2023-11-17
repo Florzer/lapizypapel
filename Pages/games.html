@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juegos de Mesa</title>
     <!--reset CSS-->
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <!--bootstrap-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!--fonts-->
@@ -13,16 +13,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!--CSS-->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/juegos.css">
     <!--Animaciones CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <header>
-        <!--Nav bar con bootstrap-->
+        <!--Nav bar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="./media/img/logo_final.png" alt="Logo" class="logo animate__animated animate__heartBeat">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../media/img/logo_final.png" alt="Logo" class="logo animate__animated animate__heartBeat">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./Pages/games.html">Juegos</a>
+                        <a class="nav-link" href="./games.html">Juegos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Empresas</a>
@@ -40,6 +41,8 @@
                             Nosotros
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Acerca de</a>
+                            <a class="dropdown-item" href="#">Nuestro equipo</a>
                             <a class="dropdown-item" href="#">Historia</a>
                         </div>
                     </li>
@@ -56,14 +59,34 @@
                 <input class="search-button" type="submit" value="Buscar">
             </form>
         </div>
-        
     </header>
-    <main class="main-index">
-        <!--Banner con juego destacado-->
-        <section class="banner">
-            <h2 class="banner__title">Destacado del mes</h2>
-            <a href="#" class="btn-destacado">Ver Juego</a>
-        </section>
+<main class="main-juegos">
+    <!-- Filtros -->
+    <aside class="filter-container">
+        <div class="filter">
+            <label for="tema">Temática:</label>
+            <input type="text" id="tema" placeholder="Buscar por temática">
+        
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" placeholder="Buscar por marca">
+        
+            <label for="jugadores">Cantidad de Jugadores:</label>
+            <input type="number" id="jugadores" min="1" max="10">
+        
+            <label for="orden">Ordenar por:</label>
+            <select id="orden">
+                <option value="mayor-menor">Mayor a Menor</option>
+                <option value="menor-mayor">Menor a Mayor</option>
+            </select>
+        
+            <label for="precio">Rango de Precios:</label>
+            <input type="range" id="precio" min="0" max="100" step="1">
+        
+            <button id="buscarJuegos">Buscar</button>
+        </div>
+    </aside>
+    <!-- Juegos -->
+    <div class="Games-container">
         <!--Cards juegos con bootstrap-->
         <h1 class="games-title">Juegos</h1>
         <section class="games-featured">
@@ -72,78 +95,47 @@
                     <!-- Card 1 -->
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="./media/img/camarero.jpg" alt="Camarero" class="card-img-top">
+                            <img src="../media/img/camarero.jpg" alt="Camarero" class="card-img-top">
                             <div class="card-body">
                                 <h2 class="card-title">Camarero</h2>
-                                <p class="card-text game__description">El Camarero es un juego de mesa que hace honor a la memoria prodigiosa de los camareros de todo el mundo. ¿Creés que podrías ser un gran camarero?</p>
-                                <p class="game__price">$16.300</p>
-                                <p class="game__promo">3 Cuotas sin interes</p>
+                                <p class="card-text game__description">Descripción breve del juego 1.</p>
+                                <p class="game__price">Precio</p>
+                                <p class="game__promo">Cuotas sin interes</p>
                             </div>
                         </div>
                     </div>
                     <!-- Card 2 -->
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="./media/img/macanudo.jpg" alt="Macanudo" class="card-img-top">
+                            <img src="../media/img/macanudo.jpg" alt="Macanudo" class="card-img-top">
                             <div class="card-body">
                                 <h2 class="card-title">Macanudo</h2>
-                                <p class="card-text game__description">El Macanudo es un juego de mesa de creatividad y asociación libre con los dibujos de la tira Macanudo de Liniers.</p>
-                                <p class="game__price">$24.000</p>
-                                <p class="game__promo">3 Cuotas sin interes</p>
+                                <p class="card-text game__description">Descripción breve del juego 2.</p>
+                                <p class="game__price">Precio</p>
+                                <p class="game__promo">Cuotas sin interes</p>
                             </div>
                         </div>
                     </div>
                     <!-- Card 3 -->
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="./media/img/derby.jpg" alt="Derby" class="card-img-top">
+                            <img src="../media/img/derby.jpg" alt="Derby" class="card-img-top">
                             <div class="card-body">
                                 <h2 class="card-title">Derby</h2>
-                                <p class="card-text game__description">Derby es un juego de mesa de intuición y suerte. El objetivo del juego es ganar la mayor cantidad de puntos a lo largo de 5 carreras.</p>
-                                <p class="game__price">$15.300</p>
-                                <p class="game__promo">3 Cuotas sin interes</p>
+                                <p class="card-text game__description">Descripción breve del juego 3.</p>
+                                <p class="game__price">Precio</p>
+                                <p class="game__promo">Cuotas sin interes</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-            <h2 class="latest-releases">Últimos lanzamientos</h2>
-            <!--Carrusel-->
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicadores -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <!-- Contenido del carrusel, me faltaría poner los links a cada juego-->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./media/img/Jardinero-juegonuevo.jpg" alt="Jardinero" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./media/img/katamino-juegonuevo.jpg" alt="Katamino" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./media/img/quarto-juegonuevo.jpg" alt="Quarto" class="d-block w-100">
-                    </div>
-                </div>
-                <!-- Controles del carrusel -->
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section>
-    </main>
+    </div>
+</main>
     <!--Footer-->
     <footer class="main-footer">
-        <img src="./media/img/logo_final.png" alt="Logo" class="footer-logo">
+        <img src="../media/img/logo_final.png" alt="Logo" class="footer-logo">
         <nav class="footer-nav">
             <a href="./register.html" class="footer-link">Registro</a>
             <a href="#" class="footer-link">Login</a>
@@ -151,7 +143,7 @@
         </nav>
     </footer>
     <!--JS-->
-    <script src="./js/js.js"></script>
+    <script src="../js/js.js"></script>
     <!--bootstrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
