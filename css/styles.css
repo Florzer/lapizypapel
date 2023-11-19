@@ -166,7 +166,7 @@ a:hover, a:focus {
     width: 100%;
 }
 
-.banner__title{
+.banner__title {
     position: absolute;
     bottom: calc(25% + 10px);  /* Esta es la distancia desde la parte inferior de la imagen*/
     left: 50%;
@@ -193,35 +193,43 @@ a:hover, a:focus {
 
 /*Main*/
 
-.main-index{
+.main-index {
     margin-bottom: 50px;
 }
 
-.games-title{
+.main-juegos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.games-title {
     text-align: center;
     padding: 50px;
 }
 
-.game__price{
+.game__price {
     color: var(--dark-bg-solid);
     font-size: large;
 }
 
-.game__promo{
+.game__promo {
     color: var(--secondary-solid);
 }
 
 /* Games Featured */
 
-.card{
-    
-}
-
-.games-featured{
+.games-featured {
     margin: 30px;
 }
 .games-featured .card {
     margin-bottom: var(--spacing-24);  /* Añade espacio entre las cards y otros elementos */
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.games-featured .card-body {
+    flex-grow: 1;/* Hace que el cuerpo de la tarjeta crezca para ocupar el espacio restante */
 }
 
 .games-featured .card-img-top {
@@ -230,6 +238,10 @@ a:hover, a:focus {
 
 .games-featured .card:hover .card-img-top {
     transform: scale(1.05);
+}
+
+.col-md-4 {
+    display: inline;
 }
 
 /*Carrusel*/
@@ -384,8 +396,6 @@ img, video {
 .footer-nav {
     margin-top: var(--spacing-12);
 }
-
-
 
 }
 
