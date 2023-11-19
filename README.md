@@ -5,6 +5,9 @@ Mi proyecto personal es una página dedicada a la venta de juegos de mesa.
 
 ## Capturas de Pantalla
 
+![Mi página](https://github.com/Florzer/imagenesBAweb/blob/main/Captura%20de%20pantalla%202023-11-16%20234005.png?raw=true)
+![Mi página](https://github.com/Florzer/imagenesBAweb/blob/main/Captura%20de%20pantalla%202023-11-16%20234046.png?raw=true)
+![Mi página](https://github.com/Florzer/imagenesBAweb/blob/main/Captura%20de%20pantalla%202023-11-16%20234108.png?raw=true)
 
 ## Características
 
